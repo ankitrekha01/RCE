@@ -1,0 +1,29 @@
+#submit {
+  outline: none;
+  font-size: 1rem;
+  position: absolute;
+  top: 2%;
+  left: 56%;
+  height: 5.2%;
+  width: 110px;
+  background-color: rgb(0, 46, 87);
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  font-size: bolder;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  z-index: 5;
+}
+#submit:hover {
+  background-color: rgb(0, 38, 73);
+}
+
+@media only screen and (max-width:720px){
+  #submit{
+    top: 1.5%;
+  }
+}

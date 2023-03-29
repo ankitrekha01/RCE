@@ -1,0 +1,58 @@
+#header {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8%;
+  width: 100%;
+  background-color: rgb(0, 46, 87);
+}
+
+#fontSize {
+  display: flex;
+  position: relative;
+  top: 25%;
+  left: 49%;
+  height: 65%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+  width: 6%;
+  background-color: rgb(0, 46, 87);
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#fontSize:hover {
+  background-color: rgb(0, 38, 73);
+}
+#dropMenu2 {
+  position: relative;
+  top: 30%;
+  left: 49%;
+  width: 6%;
+  font-size: 1.5rem;
+  background-color: rgb(0, 46, 87);
+  border: 2px solid white;
+  border-radius: 12px;
+}
+#dropMenu2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: white;
+}
+#dropMenu2 div:hover {
+  background-color: rgb(98, 110, 227);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+  #fontSize {
+    visibility: hidden;
+  }
+}
