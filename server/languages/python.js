@@ -13,7 +13,16 @@ const python = (input, res, name) => {
       )
         .then((resp) => {
           res.json(resp);
-          exec(`del ${name}.py && del ${name}.txt`).then((resp) =>
+          // exec(`del ${name}.py && del ${name}.txt`).then((resp) =>
+          //   console.log("Files removed")
+          // );
+          exec(`rm ${name}.py && rm ${name}.txt`).then((resp) =>
+            console.log("Files removed")
+          );
+          // exec(`del ${name}.py && del ${name}.txt`).then((resp) =>
+          //   console.log("Files removed")
+          // );
+          exec(`rm ${name}.py && rm ${name}.txt`).then((resp) =>
             console.log("Files removed")
           );
           exec(`docker kill ${id}`).then((resp) =>

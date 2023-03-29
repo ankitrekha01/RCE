@@ -13,7 +13,10 @@ const java = (input, res, name) => {
       )
         .then((resp) => {
           res.json(resp);
-          exec(`del ${name}.java && del ${name}.txt`).then((resp) =>
+          // exec(`del ${name}.java && del ${name}.txt`).then((resp) =>
+          //   console.log("Files removed")
+          // );
+          exec(`rm ${name}.java && rm ${name}.txt`).then((resp) =>
             console.log("Files removed")
           );
           exec(`docker kill ${id}`).then((resp) =>
@@ -22,7 +25,10 @@ const java = (input, res, name) => {
         })
         .catch((err) => {
           res.json(err);
-          exec(`del ${name}.java && del ${name}.txt`).then((resp) =>
+          // exec(`del ${name}.java && del ${name}.txt`).then((resp) =>
+          //   console.log("Files removed")
+          // );
+          exec(`rm ${name}.java && rm ${name}.txt`).then((resp) =>
             console.log("Files removed")
           );
           exec(`docker kill ${id}`).then((resp) =>

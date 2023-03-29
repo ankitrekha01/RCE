@@ -13,7 +13,10 @@ const cpp = (input, res, name) => {
       )
         .then((resp) => {
           res.json(resp);
-          exec(`del ${name}.cpp && del ${name}.txt`).then((resp) =>
+          // exec(`del ${name}.cpp && del ${name}.txt`).then((resp) =>
+          //   console.log("Files removed")
+          // );
+          exec(`rm ${name}.cpp && rm ${name}.txt`).then((resp) =>
             console.log("Files removed")
           );
           exec(`docker kill ${id}`).then((resp) =>
@@ -22,7 +25,10 @@ const cpp = (input, res, name) => {
         })
         .catch((err) => {
           res.json(err);
-          exec(`del ${name}.cpp && del ${name}.txt`).then((resp) =>
+          // exec(`del ${name}.cpp && del ${name}.txt`).then((resp) =>
+          //   console.log("Files removed")
+          // );
+          exec(`rm ${name}.cpp && rm ${name}.txt`).then((resp) =>
             console.log("Files removed")
           );
           exec(`docker kill ${id}`).then((resp) =>
