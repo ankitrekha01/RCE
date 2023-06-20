@@ -32,7 +32,7 @@
 
 ## About The Project
 
-This is the server-side code of a Remote Code Executor. This is a project assigned by the Coding forum of my college and is similar to the Online IDEs of websites like CodeChef and Leetcode.
+This is the server-side code of a Remote Code Executor. It is similar to the Online IDEs of websites like CodeChef and Leetcode.
 
 Salient Features:
 
