@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple steps.
   ```
 
 ### Installation
-#### If you are on a Linux(preferably Ubuntu) Machine
+#### If you are on a Linux Machine
 1. Clone the repo
    ```sh
    git clone https://github.com/ankitrekha01/RCE
