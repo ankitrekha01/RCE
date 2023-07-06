@@ -1,9 +1,4 @@
-<p align="center">
-  <a href="https://github.com/ankitrekha01/RCE">
-  </a>
-
-  <h3 align="center">Remote Code Executor</h3>
-</p>
+<h3 align="center">Remote Code Executor</h3>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -23,7 +18,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
   </ol>
 </details>
@@ -32,21 +26,25 @@
 
 ## About The Project
 
-This is the server-side code of a Remote Code Executor. It is similar to the Online IDEs of websites like CodeChef and Leetcode.
+This is a Remote Code Executor, virtual platform where you can write, edit, and run your code directly within a web browser. It is similar to the Online IDEs of websites like CodeChef and Leetcode.
 
 Salient Features:
 
-- Code Sanitisation
 - An individual Docker Container is created for every code posted on the API, so no code interferes with any other code
 - All Async code so that the server can handle multiple requests without error
 - Socket has been implemented along with rooms for seperate users so that the server can handle multiple users in multiple rooms
 - Keeping it simple, there is not need for signup or login, you can jump in and start coding
 - Timeouts and max memory have been implemented so that no code takes up too much of the server's time
+- Timeout to prevent the user from spamming the run code button and triggering a DoS attack
+- Stay informed with real-time notifications when users join or leave the meeting room, keeping you updated on participant activity.
+- In the event of an internet interruption, the user will be gracefully redirected back to the Join Page, where they will be prompted to log in again
+- To maintain a unique and distinct user environment, duplicate usernames are not permitted. 
 
 ### Built With
 
 <a href="https://expressjs.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" alt="express" height="40"/> </a><a href="https://reactjs.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="60" height="40"/> </a><a href="https://nodejs.org" target="_blank"> <img src="https://img.icons8.com/color/48/000000/nodejs.png"/> </a>
-<a href="https://www.docker.com/" target="_blank"> <img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" alt="docker" width="58" height="50"/> </a> 
+<a href="https://www.docker.com/" target="_blank"> <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="docker" width="40" height="40"/> </a> 
+<a href="https://socket.io/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/1200px-Socket-io.svg.png" alt="SocketIO" width="40" height="40" /></a>
 
 <!-- GETTING STARTED -->
 
@@ -144,25 +142,23 @@ To get a local copy up and running follow these simple steps.
 
 ## Usage
 
-1.  To run the server in dev mode use
+1.  To run the App and server
+
+    - To run the React App(FrontEnd)
     ```sh
-    npm run dev
+    npm start
     ```
-2.  To run the server in production mode
-    ```sh 
-    npm start 
-    ```
-3.  Note that dev mode uses nodemon so that the server can be changed and restarted easily
-4.  It is important to note that you will have to setup environment variables to the appropriate endpoints, should you deploy this locally or somewhere else
+    - To run the server(BackEnd)
 
-
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
-
+      - In dev mode
+      ```sh
+      npm run dev
+      ```
+      - In production mode
+      ```sh
+      npm start
+      ```
+2.  Note that dev mode uses nodemon so that the server can be changed and restarted easily
 
 ## Screenshots
 <img src="https://i.imgur.com/QxxhIju.png"></img>
