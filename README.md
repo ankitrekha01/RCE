@@ -26,7 +26,7 @@
 
 ## About The Project
 
-This is a Remote Code Executor, virtual platform where you can write, edit, and run your code directly within a web browser. It is similar to the Online IDEs of websites like CodeChef and Leetcode.
+Remote Code Executor, virtual platform where you can write, edit, and run your code directly within a web browser. It is similar to the Online IDEs of websites like CodeChef and Leetcode.
 
 Salient Features:
 
