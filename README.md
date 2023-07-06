@@ -70,7 +70,7 @@ To get a local copy up and running follow these simple steps.
 #### If you are on a Linux Machine
 1. Clone the repo
    ```sh
-   git clone https://github.com/ankitrekha01/RCE
+   git clone https://github.com/ankitrekha01/Remote-Code-Executor
    ```
 2. Install NPM packages
    ```sh
