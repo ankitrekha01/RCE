@@ -161,5 +161,9 @@ To get a local copy up and running follow these simple steps.
 2.  Note that dev mode uses nodemon so that the server can be changed and restarted easily
 
 ## Screenshots
-<img src="https://i.imgur.com/QxxhIju.png"></img>
-<img src="https://i.imgur.com/OtICDoU.png"></img>
+![internet lost](https://github.com/ankitrekha01/Remote-Code-Executor/assets/62371794/714528f8-08e4-407f-8d13-bff4b9e751fe)
+![username taken](https://github.com/ankitrekha01/Remote-Code-Executor/assets/62371794/fdf85991-81d6-48bc-bc6d-30ba236e9181)
+![joining](https://github.com/ankitrekha01/Remote-Code-Executor/assets/62371794/0b740061-e7ec-4734-9567-6544ab4dadc1)
+![new user](https://github.com/ankitrekha01/Remote-Code-Executor/assets/62371794/a547e4ac-2f6e-49af-be94-0c2dfb1584e5)
+![left room](https://github.com/ankitrekha01/Remote-Code-Executor/assets/62371794/cc735758-d99c-41c3-a239-929ad713b89e)
+
